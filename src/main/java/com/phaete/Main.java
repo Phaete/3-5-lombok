@@ -148,6 +148,7 @@ public class Main {
                 .grade(new BigDecimal("4.0"))
                 .build();
         System.out.println(atticusFinch);
+        System.out.println("____________________________");
 
         Teacher fredFlintstones = Teacher.builder()
                 .id("3")
@@ -155,8 +156,21 @@ public class Main {
                 .subject("Geology")
                 .build();
         System.out.println(fredFlintstones);
+        System.out.println("____________________________");
+
+        Teacher scoobyDoo = Teacher.builder()
+                .id("4")
+                .subject("Spirits")
+                .build();
+        System.out.println(scoobyDoo);
+        System.out.println("____________________________");
+
+        Student lexLuthor = new Student();
+        System.out.println(lexLuthor);
+        System.out.println("____________________________");
 
         Teacher barneyRubblesBestFriend = fredFlintstones.withSubject("Crane Operation");
         System.out.println(barneyRubblesBestFriend);
+        System.out.println("____________________________");
     }
 }
